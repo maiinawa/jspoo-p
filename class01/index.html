@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+    
+<html>
+    
+    <script>
+        //exercices pour mise en pratique de création d'objet via classes
+        //création classes voitures via instance
+        //(marques, modeles, type, carburant, année)
+        class Cars {
+            constructor(marque, modele, type, carburant, annee) {
+
+                this.marque = marque;
+                this.modele = modele;
+                this.type = type;
+                this.carburant = carburant;
+                this.annee = annee;
+
+            }
+        }
+
+        let firstCar = new Cars("Renault", "Twingo","Citadine","Essence",1998)
+        let greenCar = new Cars("Peugeot", 208,"Citadine","Essence",1995)
+
+
+        console.log(greenCar)
+    </script>
+
+</html>
+
