@@ -7,23 +7,47 @@
         //exercices pour mise en pratique de création d'objet via classes
         //création classes voitures via instance
         //(marques, modeles, type, carburant, année)
-        class Cars {
-            constructor(marque, modele, type, carburant, annee) {
-
-                this.marque = marque;
-                this.modele = modele;
-                this.type = type;
-                this.carburant = carburant;
-                this.annee = annee;
-
+        class Photo {
+            constructor(id, photographerId, title, image, likes, date, price) {
+                this.title = title;
+                this.photographerId = photographerId;
+                this.id = id;
+                this.image = image;
+                this.likes = likes;
+                this.date = date;
+                this.price = price;
+    		}
+            screen(){
+                return `</span>Ceci est une photo</span>`
+            }
+       }
+        
+           class Video {
+                constructor(id, photographerId, title, video, likes, date, price) {
+                    this.title = title;
+                    this.photographerId = photographerId;
+                    this.id = id;
+                    this.video = video;
+                    this.likes = likes;
+                    this.date = date;
+                    this.price = price;
+    		    }
+                screen(){
+                return `</span>Ceci est une video</span>`
+                }
+            }
+        
+        
+        function playMedias(data){
+            if (data.hasOwnProperty === 'video'){
+            new Video;
+            Video.screen()
+            } else if (data.hasOwnProperty === 'image'){
+                new Image;
+             Image.screen()
             }
         }
 
-        let firstCar = new Cars("Renault", "Twingo","Citadine","Essence",1998)
-        let greenCar = new Cars("Peugeot", 208,"Citadine","Essence",1995)
-
-
-        console.log(greenCar)
     </script>
 
 </html>
